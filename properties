@@ -1,0 +1,24 @@
+# You are reading the ".properties" entry.
+# The key and element characters #, !, =, and : are written with
+# a preceding backslash to ensure that they are properly loaded.
+
+#registry        Your docker repo name
+#destination_tag Tag the docker image
+#repository_path Path to the image
+#container_name	 Name of the image
+#build_arg       Arguments to pass to docker build command for example if you wish to pass an the value of http://proxy to the argument proxy in the Docker file during build:
+#                --build-arg proxy=http://proxy
+#flags		 Flags to run the container using docker run, for example, for docker run -d -p 8080:80 XXXX use:
+#                flags = -d -p 8080:80
+#command	 Command to start in the container
+#retain		 Number of QA images to retain in the Docker registry
+
+
+registry = docker address:51074
+destination_tag = windows
+repository_path = tools
+image_name = inspec-gen
+build_arg = 
+flags = -d 
+command = ''
+retain = 5
